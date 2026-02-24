@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "sed -i '' 's/\\.\\/components/\\.\\/components\\/index.js/g; s/\\.\\/icons/\\.\\/icons\\.js/g; s/\\.\\/logos/\\.\\/logos\\.js/g' node_modules/@stellar/design-system/build/index.js && find node_modules/@stellar/design-system/build/components -name 'index.js' -exec dirname {} \\; | xargs -I {} touch {}/styles.scss && echo '<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"10\" height=\"10\"><path d=\"M0 0l5 5 5-5z\"/></svg>' > node_modules/@stellar/design-system/build/components/Floater/arrow.svg"
+    "postinstall": "node scripts/patch-design-system.js"
   },
   "dependencies": {
     "@creit.tech/stellar-wallets-kit": "^2.0.0",
