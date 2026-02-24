@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 /**
  * Hook to interact with the Payroll Stream contract.
@@ -19,5 +19,5 @@ export function usePayrollStream() {
     claimFromStream: async (_streamId: number) => {},
     cancelStream: async (_streamId: number) => {},
     getClaimable: async (_streamId: number) => 0,
-  }
+  };
 }

@@ -1,30 +1,147 @@
+ ⚠ Linting is disabled.
   ▲ Next.js 14.2.35
 
    Creating an optimized production build ...
  ✓ Compiled successfully
-   Linting and checking validity of types ...
- ⨯ ESLint: Invalid Options: - Unknown options: useEslintrc, extensions - 'extensions' has been removed.
+   Checking validity of types ...
    Collecting page data ...
-   Generating static pages (0/8) ...
-   Generating static pages (2/8) 
-   Generating static pages (4/8) 
-   Generating static pages (6/8) 
- ✓ Generating static pages (8/8)
-   Finalizing page optimization ...
-   Collecting build traces ...
+   Generating static pages (0/17) ...
+react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next { code: 'NO_I18NEXT_INSTANCE' }
+Error: No QueryClient set, use QueryClientProvider to set one
+    at useQueryClient (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:15:11)
+    at useBaseQuery (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:30:18)
+    at useQuery (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/useQuery.js:7:10)
+    at c (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/FeeEstimation.js:1:10311)
+    at u (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/FeeEstimation.js:1:4305)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
 
-Route (app)                              Size     First Load JS
-┌ ○ /                                    152 B          87.5 kB
-├ ○ /_not-found                          875 B          88.3 kB
-├ ○ /governance                          151 B          87.5 kB
-├ ○ /payroll                             152 B          87.5 kB
-├ ○ /treasury                            151 B          87.5 kB
-└ ○ /vesting                             152 B          87.5 kB
-+ First Load JS shared by all            87.4 kB
-  ├ chunks/117-829f1d952a531f7c.js       31.7 kB
-  ├ chunks/fd9d1056-450696502a099a01.js  53.7 kB
-  └ other shared chunks (total)          2 kB
+Error occurred prerendering page "/FeeEstimation". Read more: https://nextjs.org/docs/messages/prerender-error
 
+Error: No QueryClient set, use QueryClientProvider to set one
+    at useQueryClient (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js:15:11)
+    at useBaseQuery (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/useBaseQuery.js:30:18)
+    at useQuery (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/@tanstack/react-query/build/modern/useQuery.js:7:10)
+    at c (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/FeeEstimation.js:1:10311)
+    at u (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/FeeEstimation.js:1:4305)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:16864)
+    at p (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/CrossAssetPayment.js:1:4279)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
 
-○  (Static)  prerendered as static content
+Error occurred prerendering page "/CrossAssetPayment". Read more: https://nextjs.org/docs/messages/prerender-error
 
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:16864)
+    at p (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/CrossAssetPayment.js:1:4279)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+Error: useNavigate() may be used only in the context of a <Router> component.
+    at invariant (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:199:11)
+    at useNavigateUnstable (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:5609:3)
+    at useNavigate (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:5606:46)
+    at o (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/Home.js:1:1237)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+
+Error occurred prerendering page "/Home". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: useNavigate() may be used only in the context of a <Router> component.
+    at invariant (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:199:11)
+    at useNavigateUnstable (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:5609:3)
+    at useNavigate (file:///Users/mac/Desktop/Drips/wave%202/OrbitPay/frontend/node_modules/react-router/dist/development/chunk-LFPYN7LY.mjs:5606:46)
+    at o (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/Home.js:1:1237)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+   Generating static pages (4/17) 
+react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next { code: 'NO_I18NEXT_INSTANCE' }
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:16864)
+    at g (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:23249)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+
+Error occurred prerendering page "/PayrollScheduler". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:16864)
+    at g (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/PayrollScheduler.js:1:23249)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+   Generating static pages (8/17) 
+   Generating static pages (12/17) 
+react-i18next:: useTranslation: You will need to pass in an i18next instance by using initReactI18next { code: 'NO_I18NEXT_INSTANCE' }
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/EmployeeEntry.js:1:14293)
+    at h (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/EmployeeEntry.js:1:15527)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+
+Error occurred prerendering page "/EmployeeEntry". Read more: https://nextjs.org/docs/messages/prerender-error
+
+Error: useNotification must be used within NotificationProvider
+    at r (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/EmployeeEntry.js:1:14293)
+    at h (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/.next/server/pages/EmployeeEntry.js:1:15527)
+    at Wc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:44)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:253)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Xc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:68:409)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:210)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+    at Zc (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:70:481)
+    at Z (/Users/mac/Desktop/Drips/wave 2/OrbitPay/frontend/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:89)
+ ✓ Generating static pages (17/17)
+
+> Export encountered errors on following paths:
+	/CrossAssetPayment
+	/EmployeeEntry
+	/FeeEstimation
+	/Home
+	/PayrollScheduler

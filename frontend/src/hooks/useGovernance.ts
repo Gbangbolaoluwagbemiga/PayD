@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 /**
  * Hook to interact with the Governance contract.
@@ -11,9 +11,14 @@ export function useGovernance() {
     members: [],
     config: null,
     isLoading: true,
-    createProposal: async (_title: string, _token: string, _amount: number, _recipient: string) => {},
+    createProposal: async (
+      _title: string,
+      _token: string,
+      _amount: number,
+      _recipient: string
+    ) => {},
     vote: async (_proposalId: number, _choice: 'yes' | 'no' | 'abstain') => {},
     finalize: async (_proposalId: number) => {},
     execute: async (_proposalId: number) => {},
-  }
+  };
 }

@@ -4,7 +4,7 @@ import { useNotification } from '../hooks/useNotification';
 import { SocketContext } from '../hooks/useSocket';
 
 // Assuming backend is running on port 3000
-const SOCKET_URL = (import.meta.env.VITE_API_URL as string) || 'http://localhost:3000';
+const SOCKET_URL = (process.env.NEXT_PUBLIC_API_URL as string) || 'http://localhost:3000';
 
 export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [socket, setSocket] = useState<Socket | null>(null);
@@ -55,7 +55,7 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   };
 
   return (
-    <SocketContext
+    <SocketContext.Provider
       value={{
         socket,
         connected,
@@ -64,6 +64,6 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       }}
     >
       {children}
-    </SocketContext>
+    </SocketContext.Provider>
   );
 };

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 /**
  * Hook to interact with the Treasury contract.
@@ -14,5 +14,5 @@ export function useTreasury() {
     deposit: async (_token: string, _amount: number) => {},
     createWithdrawal: async (_token: string, _recipient: string, _amount: number) => {},
     approveWithdrawal: async (_proposalId: number) => {},
-  }
+  };
 }

@@ -8,7 +8,7 @@ export const NETWORK = {
   networkPassphrase: 'Test SDF Network ; September 2015',
   rpcUrl: 'https://soroban-testnet.stellar.org',
   horizonUrl: 'https://horizon-testnet.stellar.org',
-} as const
+} as const;
 
 /**
  * Contract IDs — these will be populated after deployment.
@@ -19,7 +19,7 @@ export const CONTRACTS = {
   payrollStream: '',
   vesting: '',
   governance: '',
-} as const
+} as const;
 
 /**
  * Creates a Soroban Server instance for RPC calls.
@@ -27,5 +27,5 @@ export const CONTRACTS = {
  */
 export function getSorobanServer() {
   // Return placeholder — contributor should implement with @stellar/stellar-sdk
-  return null
+  return null;
 }

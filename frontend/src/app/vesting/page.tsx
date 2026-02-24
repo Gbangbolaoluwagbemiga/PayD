@@ -10,5 +10,5 @@ export default function VestingPage() {
         Vesting dashboard coming soon. See ISSUES-FRONTEND.md for contribution tasks.
       </div>
     </div>
-  )
+  );
 }

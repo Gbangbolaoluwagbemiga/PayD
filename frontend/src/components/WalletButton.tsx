@@ -9,18 +9,16 @@
  * - Error: Show error state with retry
  */
 
-'use client'
+'use client';
 
-import React from 'react'
-import { useWallet } from '@/providers/WalletProvider'
-import { Wallet, LogOut, Loader2 } from 'lucide-react'
+import React from 'react';
+import { useWallet } from '@/providers/WalletProvider';
+import { Wallet, LogOut, Loader2 } from 'lucide-react';
 
 export default function WalletButton() {
-  const { address, isConnected, isConnecting, connect, disconnect } = useWallet()
+  const { address, isConnected, isConnecting, connect, disconnect } = useWallet();
 
-  const truncatedAddress = address
-    ? `${address.slice(0, 4)}...${address.slice(-4)}`
-    : ''
+  const truncatedAddress = address ? `${address.slice(0, 4)}...${address.slice(-4)}` : '';
 
   if (isConnected) {
     return (
@@ -37,7 +35,7 @@ export default function WalletButton() {
           <LogOut className="w-4 h-4" />
         </button>
       </div>
-    )
+    );
   }
 
   return (
@@ -46,12 +44,8 @@ export default function WalletButton() {
       disabled={isConnecting}
       className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-purple-500/20 active:scale-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      {isConnecting ? (
-        <Loader2 className="w-5 h-5 animate-spin" />
-      ) : (
-        <Wallet className="w-5 h-5" />
-      )}
+      {isConnecting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Wallet className="w-5 h-5" />}
       {isConnecting ? 'Connecting...' : 'Connect Wallet'}
     </button>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 /**
  * Hook to interact with the Vesting contract.
@@ -20,5 +20,5 @@ export function useVesting() {
     claim: async (_scheduleId: number) => {},
     revoke: async (_scheduleId: number) => {},
     getProgress: async (_scheduleId: number) => null,
-  }
+  };
 }

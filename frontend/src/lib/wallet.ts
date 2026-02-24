@@ -8,7 +8,7 @@
  * TODO: Implement with @stellar/freighter-api (contributor task FE-2)
  */
 export async function isFreighterInstalled(): Promise<boolean> {
-  return false
+  return false;
 }
 
 /**
@@ -16,7 +16,7 @@ export async function isFreighterInstalled(): Promise<boolean> {
  * TODO: Implement with @stellar/freighter-api (contributor task FE-2)
  */
 export async function connectWallet(): Promise<string | null> {
-  return null
+  return null;
 }
 
 /**
@@ -24,5 +24,5 @@ export async function connectWallet(): Promise<string | null> {
  * TODO: Implement signing flow (contributor task FE-2)
  */
 export async function signTransaction(xdr: string, network: string): Promise<string> {
-  throw new Error('Not implemented — see FE-2')
+  throw new Error('Not implemented — see FE-2');
 }

@@ -127,7 +127,7 @@ interface HorizonTransactionError {
  * Falls back to the public Stellar testnet if the variable is not set.
  */
 function getHorizonUrl(): string {
-  const envUrl = import.meta.env.PUBLIC_STELLAR_HORIZON_URL as string | undefined;
+  const envUrl = process.env.NEXT_PUBLIC_STELLAR_HORIZON_URL as string | undefined;
   return envUrl?.replace(/\/+$/, '') || 'https://horizon-testnet.stellar.org';
 }
 
@@ -208,7 +208,7 @@ export async function simulateTransaction(options: SimulationOptions): Promise<S
   const { envelopeXdr, horizonUrl } = options;
   const baseUrl = horizonUrl ?? getHorizonUrl();
   const rpcUrl =
-    (import.meta.env.PUBLIC_STELLAR_RPC_URL as string | undefined)?.replace(/\/+$/, '') ||
+    (process.env.NEXT_PUBLIC_STELLAR_RPC_URL as string | undefined)?.replace(/\/+$/, '') ||
     'https://soroban-testnet.stellar.org';
 
   const simulatedAt = new Date();

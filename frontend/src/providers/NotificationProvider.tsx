@@ -15,7 +15,6 @@ export const NotificationProvider: React.FC<{ children: React.ReactNode }> = ({ 
     toast.error(message, { description });
   }, []);
 
-
   return (
     <NotificationContext.Provider value={{ notify, notifySuccess, notifyError }}>
       {children}
